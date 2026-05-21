@@ -9,8 +9,8 @@ const connectDB = async () => {
   } catch (error) {
     console.error(`[Database Error] Failed to connect to MongoDB: ${error.message}`);
     console.warn(`[Database Warning] The application is running, but database-related actions will fail until MongoDB is active.`);
-    // In local development, we want to allow server startup even without DB running immediately
-    if (process.env.NODE_ENV === 'production') {
+    // In local development or serverless environments, we allow server startup to succeed even without DB running immediately
+    if (process.env.NODE_ENV === 'production' && !process.env.VERCEL) {
       process.exit(1);
     }
   }
