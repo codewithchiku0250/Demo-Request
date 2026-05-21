@@ -82,11 +82,16 @@ app.use((err, req, res, next) => {
 
 // Start listening
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`\n======================================================`);
-  console.log(`🚀 Server running in [${process.env.NODE_ENV || 'development'}] mode on port: ${PORT}`);
-  console.log(`🔗 Local Address: http://localhost:${PORT}`);
-  console.log(`💼 Access Client Application at the address above.`);
-  console.log(`🔑 Access Admin Dashboard at: http://localhost:${PORT}/admin.html`);
-  console.log(`======================================================\n`);
-});
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`\n======================================================`);
+    console.log(`🚀 Server running in [${process.env.NODE_ENV || 'development'}] mode on port: ${PORT}`);
+    console.log(`🔗 Local Address: http://localhost:${PORT}`);
+    console.log(`💼 Access Client Application at the address above.`);
+    console.log(`🔑 Access Admin Dashboard at: http://localhost:${PORT}/admin.html`);
+    console.log(`======================================================\n`);
+  });
+}
+
+// Export app for serverless deployments (like Vercel)
+module.exports = app;
