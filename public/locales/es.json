@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "brand": "PixelCraft Studios",
+    "home": "Inicio",
+    "portfolio": "Portafolio",
+    "testimonials": "Testimonios",
+    "cta": "Solicitar Demo"
+  },
+  "hero": {
+    "badge": "✨ OFERTA DE DEMO GRATUITA PARA TU NEGOCIO",
+    "headline": "Obtén el Sitio Web o App Demo de tu Negocio",
+    "subheading": "Diseñamos y desarrollamos sitios web, aplicaciones móviles, tiendas virtuales y sistemas de reservas premium y de alta conversión adaptados a tu negocio. ¡Solicita una demostración interactiva en vivo gratis, sin ningún pago inicial!",
+    "cta_request": "Solicitar Demo Gratis",
+    "cta_portfolio": "Ver Portafolio"
+  },
+  "business_types": {
+    "title": "Selecciona el Tipo de Negocio",
+    "subtitle": "Elige tu sector para ver nuestras plantillas digitales y características personalizadas",
+    "shop": "Tienda Minorista",
+    "restaurant": "Restaurante / Café",
+    "clinic": "Clínica / Médica",
+    "hotel": "Hotel / Alojamiento",
+    "salon": "Salón & Spa",
+    "gym": "Gimnasio & Fitness",
+    "school": "Escuela / Colegio",
+    "coaching": "Academia de Cursos",
+    "realestate": "Bienes Raíces",
+    "other": "Otros Negocios"
+  },
+  "form": {
+    "section_personal": "1. Información de Contacto",
+    "section_business": "2. Información del Negocio",
+    "section_technical": "3. Detalles Técnicos y de Diseño",
+    "full_name": "Nombre Completo",
+    "full_name_placeholder": "ej. Juan Pérez",
+    "business_name": "Nombre del Negocio",
+    "business_name_placeholder": "ej. Cafetería Gourmet",
+    "mobile": "Número de Teléfono",
+    "mobile_placeholder": "ej. +34612345678",
+    "whatsapp": "Número de WhatsApp",
+    "whatsapp_placeholder": "Mismo número u otro",
+    "email": "Correo Electrónico",
+    "email_placeholder": "ej. contacto@negocio.com",
+    "address": "Dirección del Negocio",
+    "address_placeholder": "ej. Calle Mayor 123",
+    "city_state": "Ciudad y Estado",
+    "city_state_placeholder": "ej. Madrid",
+    "service": "Servicio Requerido",
+    "service_select": "Elige el servicio...",
+    "desc": "Descripción del Negocio",
+    "desc_placeholder": "Cuéntanos qué hace tu negocio, quiénes son tus clientes, etc.",
+    "logo": "Subir Logo del Negocio",
+    "photos": "Subir Fotos del Local / Negocio (Máx 5)",
+    "color": "Color Temático Preferido",
+    "features": "Características Requeridas",
+    "budget": "Rango de Presupuesto",
+    "budget_select": "Elige tu rango de presupuesto...",
+    "deadline": "Fecha Límite Estimada",
+    "reference": "Enlace de Sitio Web de Referencia",
+    "reference_placeholder": "ej. https://competencia.com",
+    "notes": "Notas Adicionales",
+    "notes_placeholder": "¿Alguna solicitud especial, integración o pregunta?",
+    "submit": "Enviar Solicitud de Demo",
+    "submitting": "Procesando Solicitud..."
+  },
+  "services": {
+    "website": "Sitio Web Personalizado",
+    "android": "Aplicación Android",
+    "ios": "Aplicación iOS",
+    "billing": "Software POS & Facturación",
+    "ecommerce": "Tienda en Línea",
+    "booking": "Sistema de Reservas",
+    "custom": "Software a Medida"
+  },
+  "budgets": {
+    "under_500": "Menos de $500 (Básico)",
+    "500_1500": "$500 - $1,500 (Profesional)",
+    "1500_3000": "$1,500 - $3,000 (Premium)",
+    "3000_plus": "$3,000+ (Empresarial / Personalizado)"
+  },
+  "validation": {
+    "required": "Este campo es requerido",
+    "email": "Por favor introduce un correo válido",
+    "phone": "Por favor introduce un número de teléfono válido",
+    "url": "Por favor introduce una URL válida (con http:// o https://)"
+  },
+  "success": {
+    "title": "¡Solicitud Enviada!",
+    "msg1": "¡Gracias! Tu solicitud de demostración ha sido registrada con el ID:",
+    "msg2": "Nuestro equipo ya está revisando los detalles. Te contactaremos por WhatsApp o llamada en 24-48 horas para presentarte tu demo interactiva.",
+    "button": "¡Entendido, gracias!"
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "subtitle": "Con la confianza de cientos de tiendas, clínicas, escuelas y restaurantes locales en todo el mundo.",
+    "role_restaurant": "Propietario, Bistro Garden",
+    "text_restaurant": "¡Crearon una increíble aplicación de pedidos en línea para nuestro restaurante en solo una semana! Nuestras ventas subieron un 40%. La demo gratis nos convenció de inmediato.",
+    "role_gym": "Fundador, Peak Fitness",
+    "text_gym": "Equipo altamente profesional. El sistema de reservas del gimnasio funciona de maravilla. A los clientes les encanta reservar clases en nuestra app personalizada.",
+    "role_clinic": "Dra. Sarah Lee, Care Clinic",
+    "text_clinic": "Un sitio web de clínica personalizado que ha reducido las llamadas de reserva. Los avisos SMS automatizados funcionan de maravilla."
+  },
+  "portfolio": {
+    "title": "Portafolio de Trabajo",
+    "subtitle": "Explora ejemplos reales de sitios web y aplicaciones premium que diseñamos para negocios en crecimiento.",
+    "view_live": "Ver Demo En Vivo",
+    "view_full_portfolio": "Ver Portafolio Completo",
+    "tag_restaurant": "E-Commerce de Restaurante",
+    "desc_restaurant": "Diseño moderno de pedidos con carrito dinámico, sincronización instantánea y alertas de pedido en WhatsApp.",
+    "tag_salon": "App de Citas de Salón",
+    "desc_salon": "Interfaz de reserva adaptable con horarios del personal, selector de servicios y recordatorios por SMS.",
+    "tag_realestate": "Portal Inmobiliario",
+    "desc_realestate": "Búsqueda interactiva en el mapa, diapositivas de fotos HD, filtros de agentes y formularios de contacto."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "cta_desc": "Transforma tu negocio con una presencia en línea impresionante hoy mismo."
+  }
+}

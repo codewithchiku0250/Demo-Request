@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "brand": "PixelCraft Studios",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
+    "cta": "Request Demo"
+  },
+  "hero": {
+    "badge": "✨ FREE DEMO OFFER FOR YOUR BUSINESS",
+    "headline": "Get Your Business Demo Website or App",
+    "subheading": "We design and develop premium, high-converting websites, mobile apps, e-commerce stores, and booking systems custom-tailored to your business. Request a live, interactive demo for free — absolutely zero upfront payment required!",
+    "cta_request": "Request Free Demo",
+    "cta_portfolio": "View Portfolio"
+  },
+  "business_types": {
+    "title": "Select Your Business Type",
+    "subtitle": "Choose your industry to see our tailored digital templates and custom features",
+    "shop": "Retail Shop",
+    "restaurant": "Restaurant / Café",
+    "clinic": "Clinic / Medical",
+    "hotel": "Hotel / Stay",
+    "salon": "Salon & Spa",
+    "gym": "Gym & Fitness",
+    "school": "School / College",
+    "coaching": "Coaching Center",
+    "realestate": "Real Estate",
+    "other": "Other Businesses"
+  },
+  "form": {
+    "section_personal": "1. Contact Information",
+    "section_business": "2. Business Information",
+    "section_technical": "3. Technical & Design Details",
+    "full_name": "Full Name",
+    "full_name_placeholder": "e.g. John Doe",
+    "business_name": "Business Name",
+    "business_name_placeholder": "e.g. Gourmet Bites Cafe",
+    "mobile": "Mobile Number",
+    "mobile_placeholder": "e.g. +1234567890",
+    "whatsapp": "WhatsApp Number",
+    "whatsapp_placeholder": "Same as mobile or different",
+    "email": "Email Address",
+    "email_placeholder": "e.g. contact@business.com",
+    "address": "Business Address",
+    "address_placeholder": "e.g. 123 Main Street",
+    "city_state": "City & State",
+    "city_state_placeholder": "e.g. New York, NY",
+    "service": "Required Service",
+    "service_select": "Choose required service...",
+    "desc": "Business Description",
+    "desc_placeholder": "Tell us a bit about what your business does, your target clients, etc.",
+    "logo": "Upload Business Logo",
+    "photos": "Upload Shop / Business Photos (Max 5)",
+    "color": "Preferred Color Theme",
+    "features": "Features Required",
+    "budget": "Budget Range",
+    "budget_select": "Select your budget range...",
+    "deadline": "Expected Deadline",
+    "reference": "Reference Website Link",
+    "reference_placeholder": "e.g. https://competitor.com",
+    "notes": "Additional Notes",
+    "notes_placeholder": "Any specific requests, integrations, or questions?",
+    "submit": "Submit Demo Request",
+    "submitting": "Processing Request..."
+  },
+  "services": {
+    "website": "Custom Website",
+    "android": "Android App",
+    "ios": "iOS App",
+    "billing": "POS & Billing Software",
+    "ecommerce": "E-Commerce Store",
+    "booking": "Online Booking System",
+    "custom": "Custom Software Solution"
+  },
+  "budgets": {
+    "under_500": "Under $500 (Basic)",
+    "500_1500": "$500 - $1,500 (Professional)",
+    "1500_3000": "$1,500 - $3,000 (Premium)",
+    "3000_plus": "$3,000+ (Enterprise / Custom)"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "url": "Please enter a valid URL (starting with http:// or https://)"
+  },
+  "success": {
+    "title": "Demo Request Submitted!",
+    "msg1": "Thank you! Your demo request has been registered under ID:",
+    "msg2": "Our team is already reviewing your details. We will contact you on WhatsApp or Call within 24-48 hours to present your interactive demo.",
+    "button": "Got it, thanks!"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by hundreds of local shops, clinics, schools, and restaurants worldwide.",
+    "role_restaurant": "Owner, Bistro Garden",
+    "text_restaurant": "They built an amazing e-commerce app for our restaurant in just a week! Our orders went up by 40%. The free demo convinced us immediately.",
+    "role_gym": "Founder, Peak Fitness",
+    "text_gym": "Highly professional team. The gym booking system operates smoothly. Clients love booking classes on our custom Android app.",
+    "role_clinic": "Dr. Sarah Lee, Care Clinic",
+    "text_clinic": "A custom clinic website that has significantly reduced phone bookings. The automated SMS alerts work like a charm."
+  },
+  "portfolio": {
+    "title": "Our Work Portfolio",
+    "subtitle": "Explore real examples of premium websites and mobile apps we designed for growing businesses.",
+    "view_live": "View Demo Live",
+    "view_full_portfolio": "View Full Portfolio",
+    "tag_restaurant": "Restaurant E-commerce",
+    "desc_restaurant": "Modern online ordering layout with quick add-to-cart, cart sync, and WhatsApp order alerts.",
+    "tag_salon": "Salon Appointment App",
+    "desc_salon": "Seamless responsive booking interface with staff schedules, service selectors, and SMS triggers.",
+    "tag_realestate": "Real Estate Agency Portal",
+    "desc_realestate": "Interactive map search, high-resolution photo slider, agent filters, and lead contact forms."
+  },
+  "footer": {
+    "rights": "All Rights Reserved.",
+    "cta_desc": "Transform your business with a stunning online presence today."
+  }
+}

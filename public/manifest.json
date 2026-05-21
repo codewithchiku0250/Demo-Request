@@ -1,0 +1,18 @@
+{
+  "short_name": "DemoRequest",
+  "name": "PixelCraft Demo Request Portal",
+  "description": "Request premium business websites and apps with modern features",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#0f172a",
+  "theme_color": "#4f46e5",
+  "display": "standalone",
+  "orientation": "portrait"
+}

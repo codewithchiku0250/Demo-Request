@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - PixelCraft Studios</title>
+  
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+  <!-- Loading Screen overlay -->
+  <div class="page-loader" id="adminLoader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- ==================== LOGIN VIEW ==================== -->
+  <div class="login-container" id="loginView">
+    <div class="login-bg-glow"></div>
+    <div class="login-card">
+      <div class="login-logo">
+        <span class="logo-dot"></span>
+        PixelCraft Admin
+      </div>
+      <p class="login-subtitle">Sign in to manage client demo requests</p>
+      
+      <form id="adminLoginForm">
+        <div class="input-group">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" required placeholder="e.g. admin or admin@youragency.com">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required placeholder="••••••••••••">
+        </div>
+        <span class="login-error" id="loginErrorMsg"></span>
+        <button type="submit" class="btn btn-primary btn-full" id="btnLoginSubmit">
+          <span class="btn-text">Sign In securely</span>
+          <span class="btn-spinner hidden"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== DASHBOARD VIEW ==================== -->
+  <div class="dashboard-container hidden" id="dashboardView">
+    <!-- Navbar -->
+    <header class="admin-navbar">
+      <div class="nav-brand">
+        <span class="logo-dot"></span>
+        PixelCraft Dashboard
+      </div>
+      <div class="nav-user">
+        <span class="user-badge" id="adminUserIndicator">Admin</span>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button class="btn btn-outline btn-sm" id="btnAdminLogout">Logout</button>
+      </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="admin-main">
+      
+      <!-- Metrics Row -->
+      <section class="metrics-grid">
+        <div class="metric-card" data-status="All">
+          <h3>Total Requests</h3>
+          <p class="metric-val" id="metricTotal">0</p>
+          <span class="metric-lbl">All submissions</span>
+        </div>
+        <div class="metric-card" data-status="New">
+          <h3>New</h3>
+          <p class="metric-val text-neon-blue" id="metricNew">0</p>
+          <span class="metric-lbl">Awaiting action</span>
+        </div>
+        <div class="metric-card" data-status="In Progress">
+          <h3>In Progress</h3>
+          <p class="metric-val text-neon-yellow" id="metricProgress">0</p>
+          <span class="metric-lbl">Being constructed</span>
+        </div>
+        <div class="metric-card" data-status="Completed">
+          <h3>Completed</h3>
+          <p class="metric-val text-neon-green" id="metricCompleted">0</p>
+          <span class="metric-lbl">Demos delivered</span>
+        </div>
+      </section>
+
+      <!-- Filter bar -->
+      <section class="filters-card">
+        <div class="search-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="search-icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="text" id="searchBar" placeholder="Search by client, business name, phone, city or ID...">
+        </div>
+        
+        <div class="selects-row">
+          <select id="filterStatus">
+            <option value="">All Statuses</option>
+            <option value="New">New</option>
+            <option value="Contacted">Contacted</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+
+          <select id="filterType">
+            <option value="">All Business Types</option>
+            <option value="Shop">Shop</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Clinic">Clinic</option>
+            <option value="Hotel">Hotel</option>
+            <option value="Salon">Salon</option>
+            <option value="Gym">Gym</option>
+            <option value="School">School</option>
+            <option value="Coaching Center">Coaching Center</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <select id="filterService">
+            <option value="">All Services</option>
+            <option value="Website">Custom Website</option>
+            <option value="Android App">Android App</option>
+            <option value="iOS App">iOS App</option>
+            <option value="Billing Software">POS / Billing Software</option>
+            <option value="E-commerce">E-Commerce Store</option>
+            <option value="Booking System">Online Booking System</option>
+            <option value="Custom Software">Custom Software</option>
+          </select>
+
+          <select id="sortOrder">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+            <option value="name">Client Name (A-Z)</option>
+            <option value="businessName">Business Name (A-Z)</option>
+          </select>
+
+          <!-- CSV Export Button -->
+          <button class="btn btn-secondary btn-icon" id="btnExportCSV" title="Download Excel/CSV Backup">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="csv-icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Export CSV
+          </button>
+        </div>
+      </section>
+
+      <!-- Grid of Request Cards -->
+      <section class="requests-grid" id="requestsGrid">
+        <!-- Rendered Dynamically via JS -->
+      </section>
+
+      <!-- Empty state layout -->
+      <div class="empty-state hidden" id="emptyState">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <h3>No demo requests found</h3>
+        <p>Try loosening your search terms or filter configurations.</p>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ==================== DETAILED MODAL ==================== -->
+  <div class="modal-overlay hidden" id="detailsModal">
+    <div class="modal-card wide-card">
+      <button class="modal-close" id="btnDetailsClose" aria-label="Close Modal">&times;</button>
+      
+      <div class="modal-header">
+        <div>
+          <span class="modal-badge status-new" id="modalStatusBadge">New</span>
+          <h2 id="modalBusinessName">Coffee Craze Cafe</h2>
+          <p id="modalRequestId">ID: DEMO-20260521-A90F</p>
+        </div>
+        
+        <div class="modal-actions">
+          <label for="updateStatusSelect">Change Status:</label>
+          <select id="updateStatusSelect">
+            <option value="New">New</option>
+            <option value="Contacted">Contacted</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+          <button class="btn btn-danger" id="btnDeleteRequest">Delete</button>
+        </div>
+      </div>
+
+      <div class="modal-content-grid">
+        <!-- Col 1: Details -->
+        <div class="modal-info-column">
+          <div class="info-section">
+            <h4>Contact Profile</h4>
+            <table class="details-table">
+              <tr>
+                <th>Full Name:</th>
+                <td id="modalFullName">John Doe</td>
+              </tr>
+              <tr>
+                <th>Email Address:</th>
+                <td><a href="" id="modalEmailLink">john@gmail.com</a></td>
+              </tr>
+              <tr>
+                <th>Mobile Number:</th>
+                <td><a href="" id="modalMobileLink">+1 234 567 890</a></td>
+              </tr>
+              <tr>
+                <th>WhatsApp Number:</th>
+                <td><a href="" id="modalWhatsappLink" class="text-emerald-bold">+1 234 567 890</a></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="info-section">
+            <h4>Business Profile</h4>
+            <table class="details-table">
+              <tr>
+                <th>Business Type:</th>
+                <td id="modalBusinessType">Restaurant</td>
+              </tr>
+              <tr>
+                <th>Address:</th>
+                <td id="modalAddress">123 Espresso Lane</td>
+              </tr>
+              <tr>
+                <th>City & State:</th>
+                <td id="modalCityState">Seattle, WA</td>
+              </tr>
+              <tr>
+                <th>Description:</th>
+                <td id="modalDescription" class="desc-box">Organic coffee & bakery serving local commuters.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- Col 2: Specs & Uploads -->
+        <div class="modal-spec-column">
+          <div class="info-section">
+            <h4>Technical Details</h4>
+            <table class="details-table">
+              <tr>
+                <th>Required Service:</th>
+                <td><span class="service-badge" id="modalService">Website</span></td>
+              </tr>
+              <tr>
+                <th>Budget Range:</th>
+                <td id="modalBudget">$500 - $1,500</td>
+              </tr>
+              <tr>
+                <th>Deadline Date:</th>
+                <td id="modalDeadline">Flexible</td>
+              </tr>
+              <tr>
+                <th>Reference Website:</th>
+                <td><a href="" id="modalReferenceLink" target="_blank" class="text-underline">https://competitor.com</a></td>
+              </tr>
+              <tr>
+                <th>Color Theme:</th>
+                <td>
+                  <span class="color-indicator" id="modalColorIndicator"></span>
+                  <code id="modalColorHex">#4f46e5</code>
+                </td>
+              </tr>
+              <tr>
+                <th>Features Required:</th>
+                <td id="modalFeatures">User Login, Catalog, Chat</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="info-section" id="modalNotesSection">
+            <h4>Additional Notes</h4>
+            <p id="modalAdditionalNotes" class="notes-box">Integration with Mailchimp required.</p>
+          </div>
+
+          <!-- Files gallery -->
+          <div class="info-section">
+            <h4>Uploaded Assets</h4>
+            <div class="assets-gallery">
+              <div class="asset-item" id="logoAssetBox">
+                <h5>Business Logo</h5>
+                <div class="logo-preview-box" id="modalLogoBox">
+                  <!-- JS inserts img -->
+                </div>
+              </div>
+              <div class="asset-item" id="photosAssetBox">
+                <h5>Business Photos</h5>
+                <div class="photos-grid-box" id="modalPhotosBox">
+                  <!-- JS inserts images -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="/js/admin.js"></script>
+</body>
+</html>

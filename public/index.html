@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelCraft Studios - Request Free Business Demo Website or App</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Request a premium custom-built website, Android/iOS app, or billing system demo for your business absolutely free! 48h turnaround, zero upfront payment.">
+  <meta name="keywords" content="free website demo, request app demo, shop website, restaurant app, clinic booking system, hotel landing page, real estate portal">
+  <meta name="author" content="PixelCraft Studios">
+  
+  <!-- PWA Settings -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Loading Screen overlay -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo" id="navBrand">
+        <span class="logo-dot"></span>
+        PixelCraft Studios
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link" id="navLinkHome">Home</a>
+        <a href="#portfolio" class="nav-link" id="navLinkPortfolio">Portfolio</a>
+        <a href="#testimonials" class="nav-link" id="navLinkTestimonials">Testimonials</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Multi-language Toggle -->
+        <button class="lang-btn" id="langToggle" aria-label="Toggle Language" title="Switch Language">
+          ES
+        </button>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme" title="Switch Light/Dark Mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+
+        <a href="#request-section" class="btn btn-secondary nav-cta" id="navCta">Request Demo</a>
+        
+        <!-- Mobile Menu Hamburguer -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-badge" id="heroBadge">✨ FREE DEMO OFFER FOR YOUR BUSINESS</span>
+        <h1 class="hero-headline" id="heroHeadline">
+          Get Your Business Demo <span class="gradient-text">Website or App</span>
+        </h1>
+        <p class="hero-subheading" id="heroSubheading">
+          We design and develop premium, high-converting websites, mobile apps, e-commerce stores, and booking systems custom-tailored to your business. Request a live, interactive demo for free — absolutely zero upfront payment required!
+        </p>
+        
+        <div class="hero-ctas">
+          <a href="#request-section" class="btn btn-primary" id="heroCtaRequest">Request Free Demo</a>
+          <a href="#portfolio" class="btn btn-outline" id="heroCtaPortfolio">View Portfolio</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-txt">Free Demo Setup</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">48h</span>
+            <span class="stat-txt">Delivery Time</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-txt">Client Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-card floating-card-1">
+          <div class="card-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-line wide"></div>
+            <div class="placeholder-line"></div>
+            <div class="placeholder-grid">
+              <div class="grid-box"></div>
+              <div class="grid-box"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="visual-card floating-card-2">
+          <div class="device-notch"></div>
+          <div class="phone-screen">
+            <div class="circle-avatar"></div>
+            <div class="placeholder-line short"></div>
+            <div class="placeholder-pill"></div>
+          </div>
+        </div>
+
+        <div class="visual-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Type Selector Section -->
+  <section class="business-type-section" id="business-types">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="businessTypesTitle">Select Your Business Type</h2>
+        <p id="businessTypesSubtitle">Choose your industry to see our tailored digital templates and custom features</p>
+      </div>
+
+      <div class="business-grid" id="businessGrid">
+        <!-- Shop -->
+        <div class="business-card" data-type="Shop">
+          <div class="business-icon-wrapper shop-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          </div>
+          <h3 id="btnShop">Retail Shop</h3>
+        </div>
+
+        <!-- Restaurant -->
+        <div class="business-card" data-type="Restaurant">
+          <div class="business-icon-wrapper restaurant-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 id="btnRestaurant">Restaurant / Café</h3>
+        </div>
+
+        <!-- Clinic -->
+        <div class="business-card" data-type="Clinic">
+          <div class="business-icon-wrapper clinic-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+          </div>
+          <h3 id="btnClinic">Clinic / Medical</h3>
+        </div>
+
+        <!-- Hotel -->
+        <div class="business-card" data-type="Hotel">
+          <div class="business-icon-wrapper hotel-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3 id="btnHotel">Hotel / Stay</h3>
+        </div>
+
+        <!-- Salon -->
+        <div class="business-card" data-type="Salon">
+          <div class="business-icon-wrapper salon-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7a1 1 0 11-2 0 1 1 0 012 0zm-5 4a5 5 0 100-10 5 5 0 000 10z"/></svg>
+          </div>
+          <h3 id="btnSalon">Salon & Spa</h3>
+        </div>
+
+        <!-- Gym -->
+        <div class="business-card" data-type="Gym">
+          <div class="business-icon-wrapper gym-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 id="btnGym">Gym & Fitness</h3>
+        </div>
+
+        <!-- School -->
+        <div class="business-card" data-type="School">
+          <div class="business-icon-wrapper school-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+          </div>
+          <h3 id="btnSchool">School / College</h3>
+        </div>
+
+        <!-- Coaching Center -->
+        <div class="business-card" data-type="Coaching Center">
+          <div class="business-icon-wrapper coaching-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 id="btnCoaching">Coaching Center</h3>
+        </div>
+
+        <!-- Real Estate -->
+        <div class="business-card" data-type="Real Estate">
+          <div class="business-icon-wrapper realestate-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <h3 id="btnRealestate">Real Estate</h3>
+        </div>
+
+        <!-- Other -->
+        <div class="business-card" data-type="Other">
+          <div class="business-icon-wrapper other-color">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 id="btnOther">Other</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Demo Request Form Section -->
+  <section class="request-form-section" id="request-section">
+    <div class="form-bg-glow"></div>
+    <div class="container container-small">
+      <div class="section-header">
+        <h2>Submit Your Details</h2>
+        <p>No credit card required. Fill out as much detail as you can to get a perfect demo match.</p>
+      </div>
+
+      <!-- Main Form Wrapper -->
+      <form class="glass-form" id="demoRequestForm" enctype="multipart/form-data" novalidate>
+        
+        <!-- Step 1: Personal / Contact Info -->
+        <div class="form-step-card active">
+          <h3 class="step-title" id="formSectionPersonal">1. Contact Information</h3>
+          
+          <div class="form-grid-2">
+            <div class="input-group">
+              <label for="fullName" id="lblFullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required placeholder="e.g. John Doe">
+              <span class="error-msg" id="errFullName"></span>
+            </div>
+
+            <div class="input-group">
+              <label for="email" id="lblEmail">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="e.g. contact@business.com">
+              <span class="error-msg" id="errEmail"></span>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="input-group">
+              <label for="mobile" id="lblMobile">Mobile Number *</label>
+              <input type="tel" id="mobile" name="mobile" required placeholder="e.g. +1234567890">
+              <span class="error-msg" id="errMobile"></span>
+            </div>
+
+            <div class="input-group">
+              <label for="whatsapp" id="lblWhatsapp">WhatsApp Number</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="Same as mobile or different">
+              <span class="error-msg"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Business details -->
+        <div class="form-step-card">
+          <h3 class="step-title" id="formSectionBusiness">2. Business Information</h3>
+          
+          <div class="form-grid-2">
+            <div class="input-group">
+              <label for="businessName" id="lblBusinessName">Business Name *</label>
+              <input type="text" id="businessName" name="businessName" required placeholder="e.g. Gourmet Bites Cafe">
+              <span class="error-msg" id="errBusinessName"></span>
+            </div>
+
+            <div class="input-group">
+              <label for="businessType" id="lblBusinessType">Business Type *</label>
+              <select id="businessType" name="businessType" required>
+                <option value="" disabled selected id="selectBusinessType">Choose business type...</option>
+                <option value="Shop">Shop</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Clinic">Clinic</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Salon">Salon</option>
+                <option value="Gym">Gym</option>
+                <option value="School">School</option>
+                <option value="Coaching Center">Coaching Center</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="error-msg" id="errBusinessType"></span>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="input-group">
+              <label for="businessAddress" id="lblAddress">Business Address</label>
+              <input type="text" id="businessAddress" name="businessAddress" placeholder="e.g. 123 Main Street">
+            </div>
+
+            <div class="input-group">
+              <label for="cityState" id="lblCityState">City & State</label>
+              <input type="text" id="cityState" name="cityState" placeholder="e.g. New York, NY">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="businessDescription" id="lblDesc">Business Description</label>
+            <textarea id="businessDescription" name="businessDescription" rows="3" placeholder="Tell us a bit about what your business does, your target clients, etc."></textarea>
+          </div>
+        </div>
+
+        <!-- Step 3: Technical requirements -->
+        <div class="form-step-card">
+          <h3 class="step-title" id="formSectionTechnical">3. Technical & Design Details</h3>
+          
+          <div class="form-grid-2">
+            <div class="input-group">
+              <label for="requiredService" id="lblService">Required Service *</label>
+              <select id="requiredService" name="requiredService" required>
+                <option value="" disabled selected id="selectService">Choose required service...</option>
+                <option value="Website">Custom Website</option>
+                <option value="Android App">Android App</option>
+                <option value="iOS App">iOS App</option>
+                <option value="Billing Software">POS & Billing Software</option>
+                <option value="E-commerce">E-Commerce Store</option>
+                <option value="Booking System">Online Booking System</option>
+                <option value="Custom Software">Custom Software Solution</option>
+              </select>
+              <span class="error-msg" id="errRequiredService"></span>
+            </div>
+
+            <div class="input-group">
+              <label for="preferredColor" id="lblColor">Preferred Color Theme</label>
+              <div class="color-picker-wrapper">
+                <input type="color" id="preferredColor" name="preferredColor" value="#4f46e5">
+                <span class="color-hex" id="colorHex">#4f46e5</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upload Logo & Photos -->
+          <div class="form-grid-2">
+            <div class="input-group">
+              <label id="lblLogo">Upload Business Logo</label>
+              <div class="file-dropzone">
+                <input type="file" id="logo" name="logo" accept="image/*">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                <p>Drag or browse logo</p>
+                <span class="file-preview-txt" id="logoPreviewName"></span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label id="lblPhotos">Upload Shop / Business Photos (Max 5)</label>
+              <div class="file-dropzone">
+                <input type="file" id="photos" name="photos" accept="image/*" multiple>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a1 1 0 011.414 0L16 17m0 0l1-1m-1 1k-3-3m-3 3h12a1 1 0 001-1v-4a1 1 0 00-1-1h-2.382a1 1 0 00-.762.342l-1.39 1.854a1 1 0 01-.762.342H12"/></svg>
+                <p>Drag or browse photos</p>
+                <span class="file-preview-txt" id="photosPreviewCount"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature requirements -->
+          <div class="input-group">
+            <label id="lblFeatures">Features Required</label>
+            <div class="features-grid">
+              <label class="checkbox-container">
+                <input type="checkbox" name="featuresRequired" value="Customer Login">
+                <span class="checkbox-checkmark"></span> User Login
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" name="featuresRequired" value="Online Payments">
+                <span class="checkbox-checkmark"></span> Online Payments
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" name="featuresRequired" value="Booking Calendar">
+                <span class="checkbox-checkmark"></span> Booking Calendar
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" name="featuresRequired" value="Product Catalog">
+                <span class="checkbox-checkmark"></span> Product Catalog
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" name="featuresRequired" value="WhatsApp Booking">
+                <span class="checkbox-checkmark"></span> WhatsApp Booking
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" name="featuresRequired" value="Live Chat Support">
+                <span class="checkbox-checkmark"></span> Live Chat Support
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" name="featuresRequired" value="Push Notifications">
+                <span class="checkbox-checkmark"></span> Push Notifications
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" name="featuresRequired" value="Admin Panel">
+                <span class="checkbox-checkmark"></span> Custom Dashboard
+              </label>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="input-group">
+              <label for="budgetRange" id="lblBudget">Budget Range</label>
+              <select id="budgetRange" name="budgetRange">
+                <option value="" disabled selected id="selectBudget">Select your budget range...</option>
+                <option value="Under $500">Under $500 (Basic)</option>
+                <option value="$500 - $1,500">$500 - $1,500 (Professional)</option>
+                <option value="$1,500 - $3,000">$1,500 - $3,000 (Premium)</option>
+                <option value="$3,000+">$3,000+ (Enterprise / Custom)</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="deadline" id="lblDeadline">Expected Deadline</label>
+              <input type="date" id="deadline" name="deadline">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="referenceLink" id="lblReference">Reference Website Link</label>
+            <input type="url" id="referenceLink" name="referenceLink" placeholder="e.g. https://competitor.com">
+            <span class="error-msg" id="errReference"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="additionalNotes" id="lblNotes">Additional Notes</label>
+            <textarea id="additionalNotes" name="additionalNotes" rows="2" placeholder="Any specific requests, integrations, or questions?"></textarea>
+          </div>
+        </div>
+
+        <!-- Spam Protection (Checkbox Captcha) -->
+        <div class="captcha-wrapper">
+          <label class="checkbox-container">
+            <input type="checkbox" id="captchaCheck" required>
+            <span class="checkbox-checkmark"></span> I verify that this is a genuine business inquiry *
+          </label>
+          <span class="error-msg" id="errCaptcha"></span>
+        </div>
+
+        <!-- Submit Button with loading spinner inside -->
+        <button type="submit" class="btn btn-primary btn-full" id="btnSubmitForm">
+          <span class="btn-text" id="btnSubmitText">Submit Demo Request</span>
+          <div class="btn-spinner hidden"></div>
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Portfolio Showcase Section -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="portfolioTitle">Our Work Portfolio</h2>
+        <p id="portfolioSubtitle">Explore real examples of premium websites and mobile apps we designed for growing businesses.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Card 1 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant Demo Preview" loading="lazy">
+            <div class="portfolio-overlay">
+              <a href="https://my-portfolio-in-com.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="lnkRestaurantLive">View Demo Live</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag" id="tagRestaurant">Restaurant E-commerce</span>
+            <p id="descRestaurant">Modern online ordering layout with quick add-to-cart, cart sync, and WhatsApp order alerts.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Salon Booking Preview" loading="lazy">
+            <div class="portfolio-overlay">
+              <a href="https://my-portfolio-in-com.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="lnkSalonLive">View Demo Live</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag" id="tagSalon">Salon Appointment App</span>
+            <p id="descSalon">Seamless responsive booking interface with staff schedules, service selectors, and SMS triggers.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Real Estate Preview" loading="lazy">
+            <div class="portfolio-overlay">
+              <a href="https://my-portfolio-in-com.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="lnkRealestateLive">View Demo Live</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag" id="tagRealestate">Real Estate Agency Portal</span>
+            <p id="descRealestate">Interactive map search, high-resolution photo slider, agent filters, and lead contact forms.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- View Full Portfolio CTA Button -->
+      <div class="portfolio-cta-wrapper" style="text-align: center; margin-top: 3.5rem; display: flex; justify-content: center;">
+        <a href="https://my-portfolio-in-com.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btnFullPortfolio" style="box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);">
+          View Full Portfolio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="testimonialsTitle">What Our Clients Say</h2>
+        <p id="testimonialsSubtitle">Trusted by hundreds of local shops, clinics, schools, and restaurants worldwide.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p id="textRestaurant">They built an amazing e-commerce app for our restaurant in just a week! Our orders went up by 40%. The free demo convinced us immediately.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar rest-avatar"></div>
+            <div>
+              <h4>Elena Torres</h4>
+              <span id="roleRestaurant">Owner, Bistro Garden</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p id="textGym">Highly professional team. The gym booking system operates smoothly. Clients love booking classes on our custom Android app.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar gym-avatar"></div>
+            <div>
+              <h4>Marcus Vance</h4>
+              <span id="roleGym">Founder, Peak Fitness</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p id="textClinic">A custom clinic website that has significantly reduced phone bookings. The automated SMS alerts work like a charm.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar doctor-avatar"></div>
+            <div>
+              <h4>Dr. Sarah Lee</h4>
+              <span id="roleClinic">Care Clinic Director</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-dot"></span>
+            PixelCraft Studios
+          </div>
+          <p id="footerCtaDesc">Transform your business with a stunning online presence today.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links</h4>
+          <a href="#hero">Home</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="/admin.html" style="color: #6366f1; font-weight: 500;">Admin Area</a>
+        </div>
+        <div class="footer-socials">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="LinkedIn">LN</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> PixelCraft Studios. <span id="footerRights">All Rights Reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/917838797631?text=Hi,%20I'm%20interested%20in%20a%20free%20business%20demo%20website/app%20for%20my%20business!" class="whatsapp-floating" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp" title="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <!-- Success Popup Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-card">
+      <div class="modal-success-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h2 id="successTitle">Demo Request Submitted!</h2>
+      <p id="successMsg1">Thank you! Your demo request has been registered under ID:</p>
+      <div class="success-request-id" id="successRequestId">DEMO-20260521-X9Y2</div>
+      <p id="successMsg2">Our team is already reviewing your details. We will contact you on WhatsApp or Call within 24-48 hours to present your interactive demo.</p>
+      <button class="btn btn-primary" id="btnSuccessClose">Got it, thanks!</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="/js/app.js"></script>
+</body>
+</html>
